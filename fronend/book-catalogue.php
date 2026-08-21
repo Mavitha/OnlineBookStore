@@ -75,6 +75,9 @@ try {
           <option value="all" <?= $selectedCategory === 'all' ? 'selected' : '' ?>>All Categories</option>
           <option value="Educational" <?= $selectedCategory === 'Educational' ? 'selected' : '' ?>>Educational</option>
           <option value="Fiction" <?= $selectedCategory === 'Fiction' ? 'selected' : '' ?>>Fiction</option>
+          <option value="Sci-fi" <?= $selectedCategory === 'Sci-fi' ? 'selected' : '' ?>>Sci-fi</option>
+          <option value="Biography" <?= $selectedCategory === 'Biography' ? 'selected' : '' ?>>Biography</option>
+          
         </select>
       </div>
     </form>
