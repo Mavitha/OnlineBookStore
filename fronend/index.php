@@ -72,37 +72,7 @@ try {
           <div class="logo-text">Aetheria<span>Books</span></div>
         </a>
 
-        <!-- Search Bar -->
-        <div
-          class="nav-search-bar"
-          style="
-            display: flex;
-            align-items: center;
-            background: var(--bg-surface-elevated);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            border: 1px solid var(--border-subtle);
-            min-width: 250px;
-          "
-        >
-          <i
-            class="fa-solid fa-magnifying-glass"
-            style="color: var(--text-muted); margin-right: 8px"
-          ></i>
-          <input
-            type="text"
-            placeholder="Search titles, authors..."
-            style="
-              border: none;
-              background: transparent;
-              outline: none;
-              color: var(--text-main);
-              font-family: var(--font-body);
-              font-size: 0.9rem;
-              width: 100%;
-            "
-          />
-        </div>
+        
 
         <div class="nav-actions" style="display: flex; align-items: center;">
           <!-- Theme Toggle -->
