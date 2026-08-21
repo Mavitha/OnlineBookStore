@@ -46,7 +46,7 @@ CREATE TABLE orders (
 
 -- Insert Admin
 INSERT INTO users (username, password_hash, role) 
-VALUES ('admin', '$2y$10$e.w2Kj4Kx.B7H8H.R9h/2e.0.1.2.3.4.5.6.7.8.9.0.1.2.3.4', 'admin');
+VALUES ('admin', '123', 'admin');
 
 -- Insert Books (Now with trending_score data)
 INSERT INTO books (title, author, category, price, cover_image, trending_score) VALUES 

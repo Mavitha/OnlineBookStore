@@ -6,7 +6,7 @@ require_once '../backend/php/connection.php';
 $selectedCategory = isset($_GET['category']) ? $_GET['category'] : 'all';
 
 try {
-    // --- NEW: Fetch Trending Books (Top 4 by trending_score) ---
+    // --- Fetch Trending Books (Top 4 by trending_score) ---
     $stmtTrending = $pdo->query("SELECT * FROM books ORDER BY trending_score DESC LIMIT 4");
     $trendingBooks = $stmtTrending->fetchAll();
 
@@ -104,7 +104,7 @@ try {
           />
         </div>
 
-        <div class="nav-actions">
+        <div class="nav-actions" style="display: flex; align-items: center;">
           <!-- Theme Toggle -->
           <button
             onclick="toggleTheme()"
@@ -122,6 +122,12 @@ try {
             <i class="fa-solid fa-circle-half-stroke"></i>
           </button>
 
+          <!-- Cart Quick Button with Live Badge -->
+          <a href="cart.php" class="role-btn" title="View Shopping Cart" style="margin-right: 15px; position: relative; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-cart-shopping"></i> Cart
+            <span id="cartBadgeCount" style="display: none; background: var(--accent-red, #ff4757); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; font-weight: bold; position: absolute; top: -8px; right: -8px;">0</span>
+          </a>
+
           <!-- User Alias Icon -->
           <a
             href="user-dashboard.html"
@@ -132,8 +138,8 @@ try {
             <i class="fa-solid fa-circle-user"></i>
           </a>
 
-          <!-- Sign In button -->
-          <a href="admin.html" class="role-btn active">
+          <!-- Sign In button (Updated to login.php) -->
+          <a href="login.php" class="role-btn active">
             <i class="fa-solid fa-right-to-bracket"></i> Sign In
           </a>
         </div>
@@ -209,7 +215,6 @@ try {
                       class="book-cover"
                     />
                   </a>
-                  <!-- Added a Trending badge to replace the stock badge here -->
                   <div class="book-category-tag"><span class="badge badge-gold">Trending</span></div>
                 </div>
                 <div class="book-info">
@@ -246,7 +251,6 @@ try {
         </div>
 
         <!-- Search & Filter Controls -->
-        <!-- ACTION adjusted to point to index.php#catalogue to scroll down automatically -->
         <form
           class="filter-section"
           action="index.php#catalogue"
@@ -263,7 +267,6 @@ try {
               />
             </div>
             
-            <!-- Added name="category" and onchange submit -->
             <select
               class="sort-select"
               name="category"
