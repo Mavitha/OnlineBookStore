@@ -69,7 +69,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         </a>
 
         <!-- Sign In button -->
-        <a href="admin.html" class="role-btn active">
+        <a href="login.php" class="role-btn active">
           <i class="fa-solid fa-right-to-bracket"></i> Sign In
         </a>
       </div>
