@@ -45,7 +45,7 @@ try {
       </a>
     </div>
     <div>
-      <a href="admin.html" style="text-decoration: none; font-size: 1.1rem; color: inherit;">
+      <a href="login.php" style="text-decoration: none; font-size: 1.1rem; color: inherit;">
         <i class="fa-solid fa-right-to-bracket"></i> Sign In
       </a>
     </div>
@@ -116,7 +116,10 @@ try {
               </div>
               <div class="book-footer">
                 <span class="book-price">$<?= number_format($book['price'], 2) ?></span>
-                <a href="user-dashboard.html#cart" class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                <button onclick="addToCart(<?= $book['id'] ?>, '<?= htmlspecialchars(addslashes($book['title'])) ?>', <?= $book['price'] ?>)" class="add-cart-btn" style="border:none; cursor:pointer; background: transparent; font-family: inherit; font-size: inherit; color: var(--text-main);">
+                      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                
               </div>
             </div>
           </article>
