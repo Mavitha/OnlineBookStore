@@ -72,7 +72,7 @@ try {
           <div class="logo-text">Aetheria<span>Books</span></div>
         </a>
 
-        
+        git 
 
         <div class="nav-actions" style="display: flex; align-items: center;">
           <!-- Theme Toggle -->
@@ -98,16 +98,7 @@ try {
             <span id="cartBadgeCount" style="display: none; background: var(--accent-red, #ff4757); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; font-weight: bold; position: absolute; top: -8px; right: -8px;">0</span>
           </a>
 
-          <!-- User Alias Icon -->
-          <a
-            href="user-dashboard.html"
-            class="nav-link"
-            title="User Dashboard"
-            style="font-size: 1.25rem; margin-right: 15px"
-          >
-            <i class="fa-solid fa-circle-user"></i>
-          </a>
-
+        
           <!-- Sign In button (Updated to login.php) -->
           <a href="login.php" class="role-btn active">
             <i class="fa-solid fa-right-to-bracket"></i> Sign In
