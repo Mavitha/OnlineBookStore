@@ -63,10 +63,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
           <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
         
-        <!-- User Alias Icon -->
-        <a href="user-dashboard.html" class="nav-link" title="User Dashboard" style="font-size: 1.25rem; margin-right: 15px;">
-          <i class="fa-solid fa-circle-user"></i>
-        </a>
+        
 
         <!-- Sign In button -->
         <a href="login.php" class="role-btn active">
