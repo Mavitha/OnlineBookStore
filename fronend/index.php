@@ -72,7 +72,7 @@ try {
           <div class="logo-text">Aetheria<span>Books</span></div>
         </a>
 
-        git 
+        
 
         <div class="nav-actions" style="display: flex; align-items: center;">
           <!-- Theme Toggle -->
